@@ -1,7 +1,7 @@
 // current day of the week
 
 function updateWeekDay() {
-    const currentDate = new Date();
+    const currentDayOfTheWeek = new Date();
 const daysOfWeek = [
   "Sunday",
   "Monday",
@@ -12,18 +12,19 @@ const daysOfWeek = [
   "Saturday"
 ];
 
-const dayOfWeek = daysOfWeek[currentDate.getDay()];
-document.getElementById("day-of-week").innerHTML = dayOfWeek;
+const dayOfWeek = daysOfWeek[currentDayOfTheWeek.getDay()];
+document.getElementById("currentDayOfTheWeek").innerHTML = dayOfWeek;
 
 }
 updateWeekDay();
+
 
 // current utc time
 
 function UTCTimeUpdate() {
     const currentTime = new Date().toUTCString();
-       const currentTimeUTC = currentTime.replace("GMT", "UTC"); 
-       document.getElementById("time").innerHTML = currentTimeUTC;
+       const currentUTCTime = currentTime.replace("GMT", "UTC"); 
+       document.getElementById("currentUTCTime").innerHTML = currentUTCTime;
   
 }
 
@@ -31,11 +32,10 @@ setInterval(UTCTimeUpdate, 1000);
 UTCTimeUpdate();
 
 
-document.getElementById("name").style.paddingTop = "10px";
-document.getElementById("day-of-week").style.paddingTop = "10px";
-document.getElementById("time").style.paddingTop = "10px";
-document.getElementById("track").style.paddingTop = "10px";
-document.getElementById("github").style.paddingTop = "10px";
-
-document.getElementById("github").style.color = "red";
+document.getElementById("slackUserName").style.paddingTop = "10px";
+document.getElementById("currentDayOfTheWeek").style.paddingTop = "10px";
+document.getElementById("currentUTCTime").style.paddingTop = "10px";
+document.getElementById("myTrack").style.paddingTop = "10px";
+document.getElementById("githubURL").style.paddingTop = "10px";
+document.getElementById("githubURL").style.color = "red";
 
