@@ -23,3 +23,8 @@ section {
     align-items: center;
 }
 
+#profile-img {
+    width: 200px;
+    border-radius: 100px;
+}
+
