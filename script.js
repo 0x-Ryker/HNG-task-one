@@ -1,5 +1,7 @@
 // current day of the week
-const currentDate = new Date();
+
+function updateWeekDay() {
+    const currentDate = new Date();
 const daysOfWeek = [
   "Sunday",
   "Monday",
@@ -11,15 +13,21 @@ const daysOfWeek = [
 ];
 
 const dayOfWeek = daysOfWeek[currentDate.getDay()];
-
 document.getElementById("day-of-week").innerHTML = dayOfWeek;
 
+}
+updateWeekDay();
 
 // current utc time
 
-const date = new Date()
+function UTCTimeUpdate() {
+    const currentTime = new Date().toUTCString();
+       const currentTimeUTC = currentTime.replace("GMT", "UTC"); 
+       document.getElementById("time").innerHTML = currentTimeUTC;
+  
+}
 
-const utcStr = date.toUTCString();
+setInterval(UTCTimeUpdate, 1000);
+UTCTimeUpdate();
 
-document.getElementById("time").innerHTML = utcStr;
 
