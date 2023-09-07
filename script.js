@@ -15,3 +15,11 @@ const dayOfWeek = daysOfWeek[currentDate.getDay()];
 document.getElementById("day-of-week").innerHTML = dayOfWeek;
 
 
+// current utc time
+
+const date = new Date()
+
+const utcStr = date.toUTCString();
+
+document.getElementById("time").innerHTML = utcStr;
+
