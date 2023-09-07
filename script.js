@@ -31,3 +31,11 @@ setInterval(UTCTimeUpdate, 1000);
 UTCTimeUpdate();
 
 
+document.getElementById("name").style.paddingTop = "10px";
+document.getElementById("day-of-week").style.paddingTop = "10px";
+document.getElementById("time").style.paddingTop = "10px";
+document.getElementById("track").style.paddingTop = "10px";
+document.getElementById("github").style.paddingTop = "10px";
+
+document.getElementById("github").style.color = "red";
+
