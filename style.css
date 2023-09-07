@@ -31,11 +31,11 @@ section {
     border-radius: 10px;
 }
 
-#profile-img {
+#slackDisplayImage {
     width: 200px;
     border-radius: 100px;
 }
 
-#github {
+#githubURL {
     text-decoration: solid;
 }
